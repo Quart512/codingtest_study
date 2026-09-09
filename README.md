@@ -1,6 +1,6 @@
-# codingtext_study
+# 코딩테스트 오답노트
 
-코딩테스트 공부 저장소. **옵시디언 볼트**로 열어서 쓰고, GitHub에는 백업 겸 기록으로 올린다.
+코딩테스트(coding **test**) 공부 저장소. **옵시디언 볼트**로 열어서 쓰고, GitHub에는 백업 겸 기록으로 올린다.
 
 이 저장소 폴더를 옵시디언에서 `폴더를 볼트로 열기` 하면 그대로 볼트가 된다.
 
@@ -88,3 +88,11 @@ graph LR
 | **Obsidian Git** | 저장할 때마다 자동 커밋·푸시. GitHub 동기화가 가장 편해진다 |
 | **Dataview** | frontmatter `tags` 로 "Lv.2 오답노트만 모아보기" 같은 목록 자동 생성 |
 | **Templater** | 폴더 README의 템플릿을 단축키로 삽입, 날짜 자동 입력 |
+
+---
+
+> [!warning] 저장소 이름 오타
+> 원격 저장소 이름이 `codingtext_study` 로 되어 있다. `text` 가 아니라 **`test`** 다.
+> GitHub → 저장소 → `Settings` → `Repository name` 에서 `codingtest_study` 로 바꾸면
+> GitHub 이 이전 주소를 자동으로 리다이렉트해 주므로 기존 링크도 깨지지 않는다.
+> 로컬 폴더 이름과 `git remote set-url` 도 함께 바꿔야 한다.
