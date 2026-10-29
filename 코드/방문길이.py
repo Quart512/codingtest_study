@@ -28,3 +28,22 @@ def solution(dirs):
             now = next_step
 
     return answer
+
+
+TESTS = [
+    # 공식 예제
+    ("ULURRDLLU", 7),
+    ("LULLLLLLU", 7),
+    # 같은 길을 되돌아오면 새 길이 아니다
+    ("UD", 1),
+    ("RL", 1),
+    # 경계를 넘는 명령은 무시
+    ("UUUUUUUUUU", 5),
+]
+
+
+if __name__ == "__main__":
+    for dirs, expected in TESTS:
+        got = solution(dirs)
+        assert got == expected, f"{dirs} -> {got}, 기대값 {expected}"
+    print("통과")
