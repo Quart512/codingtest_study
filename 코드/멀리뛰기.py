@@ -1,8 +1,8 @@
 def solution(n):
     one,two=1,2
     for i in range(n-1):
-        one,two=two,(one+two) % 1234567
-    return one
+        one,two=two,(one+two)
+    return one % 1234567
 
 
 TESTS = [
@@ -14,7 +14,7 @@ TESTS = [
     (2, 2),
     (5, 8),
     (6, 13),
-    # 최대 입력: 나머지를 더할 때마다 구해서 숫자가 커지지 않는다
+    # 최대 입력: 중간 값은 418자리까지 커지지만 파이썬 정수는 넘치지 않는다
     (2000, 694725),
 ]
 
